@@ -70,6 +70,14 @@ body {
   background-color: black;
 }
 
+.board.x .cell:not(.x):not(.circle):hover::before,
+.board.x .cell:not(.x):not(.circle):hover::after,
+.board.circle .cell:not(.x):not(.circle):hover::before {
+  background-color: lightgrey;
+}
+
+/* ----------------------------- */
+/* Use Mondriaan colors if exits */
 .cell.circle::before {
   background-color: var(--red-color);
 }
@@ -82,8 +90,10 @@ body {
 .board.x .cell:not(.x):not(.circle):hover::before,
 .board.x .cell:not(.x):not(.circle):hover::after,
 .board.circle .cell:not(.x):not(.circle):hover::before {
-  background-color: lightgrey;
+  background-color: var(--blue-color);
+  opacity: 0.5;
 }
+/* ----------------------------- */
 
 .cell.x::before,
 .cell.x::after,
