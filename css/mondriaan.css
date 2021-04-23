@@ -1,0 +1,107 @@
+@import url("https://p.typekit.net/p.css?s=1&k=lbw7mix&ht=tk&f=39257.39258.39259.39260.39261.39262&a=12242737&app=typekit&e=css");
+
+@font-face {
+  font-family: "ff-scala-sans-pro";
+  src: url("https://use.typekit.net/af/183e60/00000000000000003b9b1f59/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/183e60/00000000000000003b9b1f59/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/183e60/00000000000000003b9b1f59/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3")
+      format("opentype");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+}
+/* ROC Mondriaan colors"#1a61a1", "#ffda00", "#e20d18" */
+:root {
+  --blue-color: #1a61a1;
+  --yellow-color: #ffda00;
+  --red-color: #e20d18;
+}
+
+.red {
+  color: var(--red-color);
+}
+.blue {
+  color: var(--blue-color);
+}
+.yellow {
+  color: var(--yellow-color);
+}
+.red-bg {
+  background-color: var(--red-color);
+}
+.blue-bg {
+  background-color: var(--blue-color);
+}
+.yellow-bg {
+  background-color: var(--yellow-color);
+}
+
+body {
+  font-family: ff-scala-sans-pro, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--blue-color);
+  background: rgb(249, 249, 249);
+  background: radial-gradient(
+    circle,
+    rgba(249, 249, 249, 1) 0%,
+    rgba(230, 243, 255, 1) 100%
+  );
+}
+
+button,
+input {
+  font-family: ff-scala-sans-pro, sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.roc-input {
+  border: none;
+  font-size: 1em;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.roc-input::placeholder {
+  color: rgba(128, 128, 128, 0.493);
+}
+
+.roc-btn {
+  border: none;
+  cursor: pointer;
+  transition: all ease 200ms;
+  font-size: 1rem;
+  padding: 0.8rem 1.2rem;
+}
+
+.roc-btn.small {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.roc-btn.big {
+  font-size: 2rem;
+  padding: 1rem 2rem;
+}
+
+.roc-btn-primary {
+  color: white;
+  background-color: #1a61a1;
+}
+
+.roc-btn-primary:hover {
+  background-color: #4582b8;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+}
+
+.roc-card {
+  padding: 1.5em;
+  background-color: white;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+}
